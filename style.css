@@ -1,0 +1,94 @@
+@font-face {
+  font-family: Gilroy;
+  src: url(./Fonts/Gilroy-Light.otf);
+  font-weight: 400;
+}
+@font-face {
+  font-family: Gilroy;
+  src: url(./Fonts/Gilroy-Medium.ttf);
+  font-weight: 600;
+}
+
+body {
+  font-family: Gilroy;
+  background-color: #ffc83b;
+  font-weight: 400;
+}
+h1 {
+  font-size: 3rem;
+  text-align: right;
+  margin-bottom: 1rem;
+}
+
+.container {
+  max-width: 40rem;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-content: center;
+  align-items: center;
+  height: 100%;
+}
+.display {
+  background-color: #e1efff;
+  height: 10rem;
+  margin-bottom: 1rem;
+  border-radius: 15px;
+}
+.display-text-wrapper {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  justify-content: space-around;
+  padding: 1rem;
+}
+.calculator {
+  margin-top: 10rem;
+  border-radius: 15px;
+  background-color: white;
+  outline: 1rem solid #ffffff85;
+}
+.buttons-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-gap: 1rem;
+  padding: 2rem;
+}
+button {
+  width: 4rem;
+  height: 4rem;
+  font-family: Gilroy;
+  font-weight: 600;
+  font-size: 1.5rem;
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+  justify-content: center;
+  align-items: center;
+}
+
+.number {
+  border-radius: 100%;
+  background-color: #e1efff;
+  border: none;
+  animation: background-color ease-in-out 0.5s;
+}
+.number:hover {
+  background-color: #e1efff9a;
+}
+.backspace {
+  max-width: 1.5rem;
+}
+.operator {
+  background-color: #89c0ff;
+  border: none;
+  border-radius: 20px;
+  animation: background-color ease-in-out 0.5s;
+}
+.operator:hover {
+  background-color: #89c0ff7a;
+}
+.operator.ac {
+  background-color: #00dec3;
+}
